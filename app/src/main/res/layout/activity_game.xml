@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText android:id="@+id/edit_betting"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:visibility="visible"
+            android:inputType="number"
+            android:hint="How many WONs do you wanna bet? -> "/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="BET"
+            android:textSize="20dp"
+            android:visibility="visible"
+            android:id="@+id/button_bet"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Game Information"
+        android:id="@+id/textView" />
+
+     <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/infoGame"
+            android:textSize = "14dp"/>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="HIT"
+            android:textSize="20dp"
+            android:visibility="visible"
+            android:id="@+id/button_hit"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:layout_marginLeft="40dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="STAND"
+            android:textSize="20dp"
+            android:visibility="visible"
+            android:background="@drawable/button"
+            android:id="@+id/button_stand" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="REPLAY"
+            android:textSize="20dp"
+            android:visibility="visible"
+            android:id="@+id/button_replay"
+            android:background="@drawable/button2"/>
+
+        <Button
+            android:layout_marginLeft="40dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="END"
+            android:textSize="20dp"
+            android:visibility="visible"
+            android:background="@drawable/button2"
+            android:id="@+id/button_end" />
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
